@@ -1,0 +1,72 @@
+
+
+/*Styles for header */
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10%;
+}
+
+.small-nav,nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 0%;
+}
+
+.small-nav .left, nav .left{
+    display: flex;
+    flex-direction: row;
+}
+
+.small-nav .right, nav .right{
+    display: flex;
+    flex-direction: row; 
+
+}
+nav a{
+    text-decoration: none;
+    color: #2c4964;
+    padding: 0% 2%;
+    font-size: 20px;
+}
+
+nav span{
+    color: #2c4964;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+}
+h1,h3{
+    color: #2c4964;
+    font-family: "Raleway", sans-serif;
+}
+h1{
+    font-size: 50px;
+}
+
+.header-bottom{
+    background-image: url('../img/hero-bg.jpg');
+    height: 600px;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-bottom .container{
+    width: 100%;
+    margin: 0% 10%;
+}
+
+button{
+    background-color: #1977cc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    width: 160px;
+}
