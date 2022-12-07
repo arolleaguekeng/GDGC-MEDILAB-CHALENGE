@@ -1,5 +1,9 @@
-
-
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
 /*Styles for header */
 .header{
     background-color: white;
@@ -25,13 +29,20 @@
     flex-direction: row; 
 
 }
-nav a{
+nav{
+    width: 80%;
+}
+nav .right a{
     text-decoration: none;
     color: #2c4964;
-    padding: 0% 2%;
-    font-size: 20px;
-}
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 3%;
 
+}
+nav button{
+    margin-top: -10px;
+}
 nav span{
     color: #2c4964;
     font-size: 30px;
@@ -40,7 +51,8 @@ nav span{
     letter-spacing: 0.5px;
     font-family: "Poppins", sans-serif;
 }
-h1,h3{
+
+h1,h3,h2{
     color: #2c4964;
     font-family: "Raleway", sans-serif;
 }
@@ -50,7 +62,7 @@ h1{
 
 .header-bottom{
     background-image: url('../img/hero-bg.jpg');
-    height: 600px;
+    height: 700px;
     background-position: center;
     display: flex;
     flex-direction: row;
@@ -58,7 +70,6 @@ h1{
 }
 
 .header-bottom .container{
-    width: 100%;
     margin: 0% 10%;
 }
 
@@ -67,6 +78,91 @@ button{
     color: white;
     border: none;
     border-radius: 25px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.header-bottom > .container button{
     padding: 15px;
-    width: 160px;
+    width: 230px;
+}
+
+/*first container Styles*/
+.first-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: -7%;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.first-container .left{
+    background-color: #1977cc;
+    width: 23%;
+    color: white;
+    margin: 0% 10%;
+    padding: 2%;
+    border-radius: 10px;
+    height: 330px;
+    margin-right: 1%;
+}
+
+.first-container .left h1{
+  color: white;
+  font-size: 35px;
+  width: 80%;
+  margin: 0;
+  margin-bottom: 5%;
+}
+.first-container .right{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+.first-container .card{
+    background-color: white;
+    width: 22%;
+    color: rgb(51, 50, 50);
+    padding: 2%;
+    border-radius: 10px;
+    height: 230px;
+    margin: 0% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 1px 3px 2px rgba(99, 97, 97, 0.219);
+}
+
+
+
+/*section doctor-vidéo*/
+
+.doctor-video .container{
+    display: flex;
+    flex-direction: row;
+}
+.doctor-video .container .left{
+    width: 45%;
+    height: 600px;
+    background-image: url('../img/about.jpg');
+    background-size:cover;
+    background-position: center;
+    margin: 0% 5% 0% 0%;
+}
+
+.doctor-video .container .right{
+    width: 55%;
+    height: 600px;
+    margin: 0% 5% 0% 0%;
+}
+
+.doctor-video .container .right .card{
+    display: flex;
+    flex-direction: row;
+}
+
+.doctor-video .container .right .card .card-right{
+    display: flex;
+    flex-direction: column;
+
 }
